@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cleopatra October Hospital - Physical Therapy Equipment Education Guide">
+  <meta name="theme-color" content="#0b8c91">
+  <title>Cleopatra October | Physical Therapy Equipment Guide</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Cleopatra October Physical Therapy">
+      <span class="brand-mark">✚</span>
+      <span>
+        <strong>CLEOPATRA OCTOBER</strong>
+        <small>Physical Therapy Department</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#videos">Videos</a>
+      <a href="#quick-guide">Quick Guide</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">☼</button>
+      <button class="icon-btn" id="focusSearch" aria-label="Search">⌕</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow">EDUCATION &nbsp;•&nbsp; PRACTICE &nbsp;•&nbsp; BETTER OUTCOMES</div>
+        <h1>Physical Therapy<br><span>Equipment Guide</span></h1>
+        <h2>Learn. Practice. <em>Treat Safely.</em></h2>
+        <p>A practical educational resource for the rehabilitation equipment used in the Physical Therapy Department.</p>
+
+        <form class="search-box" id="searchForm">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search equipment..." autocomplete="off">
+          <button type="submit">Search</button>
+        </form>
+        <div class="search-hints">Try: Traction &nbsp;|&nbsp; CPM &nbsp;|&nbsp; Laser &nbsp;|&nbsp; Shockwave &nbsp;|&nbsp; Balance &nbsp;|&nbsp; VMS</div>
+      </div>
+    </section>
+
+    <section class="section" id="equipment">
+      <div class="section-heading">
+        <div>
+          <h2>Equipment <span>Library</span></h2>
+          <p>Explore the equipment, open a quick guide, and access educational videos.</p>
+        </div>
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="mechanical">Mechanical Therapy</option>
+          <option value="rehab">Rehabilitation</option>
+          <option value="physical">Physical Agents</option>
+          <option value="electro">Electrotherapy</option>
+          <option value="balance">Balance & Functional</option>
+        </select>
+      </div>
+
+      <div class="cards" id="equipmentGrid"></div>
+      <p class="empty-state" id="emptyState">No equipment matched your search.</p>
+    </section>
+
+    <section class="quick-access" id="quick-guide">
+      <div class="quick-title">
+        <h2>Quick <span>Access</span></h2>
+        <p>Useful resources for daily practice.</p>
+      </div>
+      <a href="#videos" class="quick-card blue">
+        <div class="quick-icon">▶</div>
+        <div><strong>Video Tutorials</strong><small>Step-by-step demonstrations for the equipment.</small></div>
+        <b>→</b>
+      </a>
+      <button class="quick-card green" id="safetyBtn">
+        <div class="quick-icon">✓</div>
+        <div><strong>Safety & Precautions</strong><small>Review precautions and follow approved protocols.</small></div>
+        <b>→</b>
+      </button>
+      <button class="quick-card cyan" id="referenceBtn">
+        <div class="quick-icon">▤</div>
+        <div><strong>Quick Reference</strong><small>Key points and workflow at a glance.</small></div>
+        <b>→</b>
+      </button>
+    </section>
+
+    <section class="videos section" id="videos">
+      <div class="section-heading">
+        <div>
+          <h2>Video <span>Tutorials</span></h2>
+          <p>Add your department's approved training videos here.</p>
+        </div>
+      </div>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">✚</span><strong>CLEOPATRA OCTOBER</strong><span>Physical Therapy Department</span></div>
+    <p>For educational use only • Follow hospital protocols and manufacturer instructions.</p>
+  </footer>
+
+  <div class="modal" id="deviceModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-panel">
+      <button class="close" data-close aria-label="Close">×</button>
+      <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-body">
+        <span class="pill" id="modalCategory"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <section class="guide-section"><h3>Clinical Use</h3><p id="modalUse"></p></section>
+        <div class="guide-grid">
+          <div><h3>Quick Steps</h3><ol id="modalSteps"></ol></div>
+          <div><h3>Key Points</h3><ul id="modalPoints"></ul></div>
+        </div>
+        <section class="guide-section warning-section"><h3>Common Mistakes to Avoid</h3><ul id="modalMistakes"></ul></section>
+        <section class="guide-section evidence-section"><h3>Evidence Note</h3><p id="modalEvidence"></p></section>
+        <section class="guide-section"><h3>Sources & Further Reading</h3><ul class="source-list" id="modalSources"></ul></section>
+        <div class="notice"><strong>Clinical note:</strong> Educational resource only. This content does not replace the hospital's approved protocol, clinician judgment, or the manufacturer's instructions for the exact device.</div>
+      </div>
+    </article>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
