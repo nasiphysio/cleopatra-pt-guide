@@ -11,6 +11,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style id="clear-device-images">
+    /* Image visibility fix: this is intentionally inline so replacing index.html alone is enough. */
+    .cards .card{min-height:0 !important; background:#fff !important;}
+    .cards .card-image{height:190px !important; min-height:190px !important; padding:0 !important; background:#eef7f9 !important; border-bottom:1px solid #d8e8ec !important; position:relative !important;}
+    .cards .card-image img{width:100% !important; height:100% !important; object-fit:contain !important; object-position:center !important; display:block !important; opacity:1 !important; visibility:visible !important; mix-blend-mode:normal !important; filter:none !important;}
+    .cards .card-content{position:static !important; inset:auto !important; background:#fff !important; padding:15px 16px 17px !important; opacity:1 !important;}
+    .cards .card-content .pill,.cards .card-content h3,.cards .card-content p,.cards .card-content .view{position:relative !important; z-index:2 !important;}
+    .cards .card-content p{max-width:100% !important;}
+    body.dark .cards .card{background:#172d38 !important;}
+    body.dark .cards .card-image{background:#eaf5f7 !important;}
+    body.dark .cards .card-content{background:#172d38 !important;}
+    @media(max-width:620px){.cards .card-image{height:200px !important; min-height:200px !important;}}
+  </style>
+
 </head>
 <body>
   <header class="site-header">
