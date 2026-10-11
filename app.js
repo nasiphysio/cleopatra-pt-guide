@@ -1,315 +1,22 @@
 const devices = [
   {
-    id:"traction", name:"Traction (ISIS)", category:"mechanical", label:"Mechanical Therapy",
-    image:"assets/traction.jpg",
-    units:[],
-    videos:[["Mechanical lumbar traction — applying the belts (demonstration)", "https://www.youtube.com/watch?v=3pGR_5sCBB0", "Educational"], ["More: mechanical cervical/lumbar traction set-up", "https://www.youtube.com/results?search_query=mechanical+cervical+lumbar+traction+physical+therapy+setup", "YouTube search"]],
-    desc:"Mechanical cervical/lumbar traction. The exact ISIS model and its manufacturer manual should be verified before publishing device-specific settings.",
-    use:"Use only after a clinical assessment and when traction is appropriate to the patient's presentation. It is not a routine treatment for every low-back-pain presentation.",
-    steps:[
-      "Confirm patient identity, referral/plan, diagnosis and relevant red flags.",
-      "Inspect the machine, straps/halter and emergency stop.",
-      "Position and align the patient according to the verified device manual and the approved department protocol.",
-      "Enter only the prescribed/approved parameters; do not copy settings from another patient.",
-      "Monitor symptoms and stop if the patient develops concerning or unacceptable symptoms.",
-      "Document the device, position, settings, duration and patient response."
-    ],
-    points:[
-      "A thorough assessment comes before traction.",
-      "The patient should have a clear way to stop/alert the therapist.",
-      "Device-specific force, mode and timing must come from the actual manual/protocol.",
-      "For low back pain, evidence is condition-specific rather than universal."
-    ],
-    mistakes:[
-      "Using a generic force/time recipe without confirming diagnosis and protocol.",
-      "Treating non-radicular low back pain as if traction were routinely indicated.",
-      "Ignoring new neurological symptoms or worsening pain."
-    ],
-    evidence:"The 2021 APTA/JOSPT low-back-pain guideline reports preliminary evidence for a specific subgroup with nerve-root compression signs and peripheralization/positive crossed SLR, while recommending against routine intermittent/static traction for acute/subacute non-radicular or chronic low-back pain.",
-    sources:[
-      ["JOSPT / APTA Clinical Practice Guideline (2021)","https://doi.org/10.2519/jospt.2021.0304"],
-      ["South Tees NHS — What is traction?","https://www.southtees.nhs.uk/services/physiotherapy/community-outpatient-physiotherapy-middlesbrough-redcar-and-cleveland/what-treatments-are-available/what-is-traction/"]
-    ]
-  },
-  {
-    id:"isokinetic", name:"Iso-Kinetic", category:"rehab", label:"Rehabilitation",
-    image:"assets/isokinetic.jpg",
-    units:[],
-    videos:[["Isokinetic dynamometer — knee test set-up and alignment", "https://www.youtube.com/results?search_query=isokinetic+dynamometer+knee+test+setup+alignment+tutorial", "YouTube search"]],
-    desc:"Isokinetic dynamometry for objective muscle-performance assessment and controlled exercise.",
-    use:"Useful for standardized muscle-strength/performance assessment and, when appropriate, rehabilitation exercise. Reliable results depend on consistent positioning, stabilization, calibration and protocol.",
-    steps:[
-      "Check calibration, accessories, seat/axis alignment and safety stops.",
-      "Explain the test/exercise and demonstrate the required effort.",
-      "Position and stabilize the patient consistently; align the joint axis with the dynamometer axis.",
-      "Use a standardized warm-up and the department's validated protocol.",
-      "Run the test or exercise while monitoring pain, fatigue and technique.",
-      "Save/label results consistently and document protocol details."
-    ],
-    points:[
-      "Protocol consistency is essential for meaningful comparisons.",
-      "Calibration and stabilization affect measurement quality.",
-      "Pain, effusion, instability, acute injury and healing restrictions may require modification or postponement.",
-      "Reference values are population- and protocol-dependent."
-    ],
-    mistakes:[
-      "Comparing results obtained with different speeds, ROM or stabilization.",
-      "Skipping calibration or alignment checks.",
-      "Testing through significant pain or ignoring healing restrictions."
-    ],
-    evidence:"Recent systematic reviews support the measurement role of isokinetic dynamometry, while also highlighting heterogeneity in protocols and reference populations. Clinical testing should therefore use a consistent, documented protocol.",
-    sources:[
-      ["Physical Therapy in Sport systematic review (2025)","https://doi.org/10.1016/j.ptsp.2025.07.011"],
-      ["PTJ systematic review on reliability in neuromuscular disease (2022)","https://pubmed.ncbi.nlm.nih.gov/35899532/"]
-    ]
-  },
-  {
-    id:"tcar", name:"TCAR / TECAR", category:"physical", label:"Physical Agents",
-    image:"assets/tcar.jpg",
-    units:[["Level GW-100", "Sport Medicine", "BGSML055", "No manufacturer manual was found online for this model — request it from the supplier."]],
-    videos:[["TECAR — transfer of energy capacitive and resistive (Harley Street Physiotherapy)", "https://www.youtube.com/watch?v=if2Cufpa69A", "Educational"], ["More: capacitive / resistive application technique", "https://www.youtube.com/results?search_query=tecar+therapy+technique+capacitive+resistive+tutorial", "YouTube search"]],
-    desc:"The department's 'TCAR' entry is treated here as TECAR/transfer-energy capacitive-resistive therapy pending confirmation of the exact device and model.",
-    use:"TECAR uses radiofrequency electrical energy with capacitive/resistive coupling. Evidence for musculoskeletal pain has grown, but reviews note heterogeneity and limitations; device-specific claims should not be presented as established facts.",
-    steps:[
-      "Verify the exact device, applicator and manufacturer instructions.",
-      "Screen the patient and treatment area according to the device manual and hospital protocol.",
-      "Prepare the patient and electrode/return plate as required by the specific system.",
-      "Select only settings authorized by the department protocol and device manual.",
-      "Monitor skin sensation, comfort and treatment response continuously.",
-      "Document device, mode, settings, area and response."
-    ],
-    points:[
-      "Do not substitute a generic TECAR setting for a model-specific protocol.",
-      "Evidence is not the same as a manufacturer's marketing claim.",
-      "Thermal sensation and tissue response should be monitored.",
-      "Exact safety restrictions depend on the device and patient context."
-    ],
-    mistakes:[
-      "Calling all TECAR devices equivalent.",
-      "Using marketing claims as evidence of clinical effectiveness.",
-      "Publishing fixed parameters before the exact model is verified."
-    ],
-    evidence:"A systematic review/meta-analysis found reductions in musculoskeletal pain but substantial heterogeneity. Another evidence review described the overall literature as sparse and low level. The site therefore avoids universal parameters and strong efficacy claims.",
-    sources:[
-      ["PubMed — TECAR systematic review/meta-analysis (2023)","https://pubmed.ncbi.nlm.nih.gov/36698689/"],
-      ["ScienceDirect — scoping review of TECAR evidence","https://www.sciencedirect.com/science/article/abs/pii/S1779012320300838"]
-    ]
-  },
-  {
-    id:"cpm-upper", name:"CPM Upper Limb", category:"rehab", label:"Rehabilitation",
-    image:"assets/cpm-upper.jpg",
-    units:[["ORMED ARTROMOT S3 Comfort (shoulder CPM)", "Physiotherapy", "B1NE1070", ""]],
-    videos:[["Artromot S3 CPM — set-up for the shoulder", "https://www.youtube.com/watch?v=5E2zJj8Yv18", "Device demo"], ["ARTROMOT S3 — product overview", "https://www.youtube.com/watch?v=kdbVd9Jl_X0", "Device demo"], ["Artromot S3 — instructions for the shoulder joint", "https://www.youtube.com/watch?v=iBpq4P7_EDk", "Device demo · Russian"]],
-    desc:"Continuous passive motion for selected upper-limb joints. The joint, device and postoperative protocol determine the appropriate ROM and speed.",
-    use:"CPM passively moves a joint through a programmed range. It should complement, not automatically replace, active rehabilitation when active exercise is appropriate.",
-    steps:[
-      "Confirm the prescribed joint, postoperative restrictions and protocol.",
-      "Inspect the device and prepare padding/straps.",
-      "Align the device axis with the patient's joint axis before starting.",
-      "Set the approved ROM, speed and duration for that patient.",
-      "Start slowly and monitor comfort, swelling, skin and mechanical alignment.",
-      "Stop, reposition or escalate if the patient develops concerning symptoms."
-    ],
-    points:[
-      "Correct anatomical alignment is critical.",
-      "Never exceed the surgeon/department-approved ROM.",
-      "The device is not a substitute for individualized active rehabilitation.",
-      "Document ROM, speed, duration and tolerance."
-    ],
-    mistakes:[
-      "Increasing ROM simply because the patient tolerates the machine.",
-      "Poor axis alignment causing unwanted joint loading.",
-      "Treating CPM as a universal requirement after surgery."
-    ],
-    evidence:"Upper-limb evidence is condition-specific. A systematic review after rotator-cuff repair did not support routine CPM as superior to standard rehabilitation. Use should therefore follow the surgical/department protocol rather than a universal recipe.",
-    sources:[
-      ["Clin Rehabil systematic review — rotator cuff repair (2011)","https://pubmed.ncbi.nlm.nih.gov/20943710/"],
-      ["PubMed — systematic review of CPM after rotator cuff repair","https://pubmed.ncbi.nlm.nih.gov/20943710/"]
-    ]
-  },
-  {
-    id:"cpm-lower", name:"CPM Lower Limb", category:"rehab", label:"Rehabilitation",
-    image:"assets/cpm-lower.jpg",
-    units:[["BTL CPMotion K Elite (knee CPM)", "Sport Medicine", "BGSM3722", ""]],
-    videos:[["BTL CPMotion — product video", "https://www.youtube.com/watch?v=nbnnstnGg18", "Device demo"], ["BTL CPMotion — product video (2)", "https://www.youtube.com/watch?v=RWIr8BU5CyQ", "Device demo"], ["Knee CPM machines — what you need to know", "https://www.youtube.com/watch?v=UST32Ff9A_E", "Educational"], ["Using a CPM machine after ACL surgery", "https://www.youtube.com/watch?v=Pdfjyfy0v_M", "Educational"]],
-    desc:"Continuous passive motion for lower-limb joints, commonly used in selected postoperative pathways.",
-    use:"CPM can provide standardized passive movement when it is part of an approved rehabilitation plan. Current evidence does not support treating CPM as universally superior to active/standard physiotherapy after knee arthroplasty.",
-    steps:[
-      "Verify the prescription/protocol and the permitted ROM.",
-      "Inspect the machine, padding and straps.",
-      "Align the device with the hip/knee/ankle according to the actual model.",
-      "Set only the approved ROM, speed and duration.",
-      "Monitor pain, swelling, skin and alignment throughout the session.",
-      "Stop safely, remove the limb and document the session."
-    ],
-    points:[
-      "Do not exceed prescribed ROM.",
-      "Alignment and patient comfort must be checked continuously.",
-      "CPM should be integrated with the overall rehabilitation plan.",
-      "Document actual settings, not just 'CPM done'."
-    ],
-    mistakes:[
-      "Assuming more ROM or longer duration is always better.",
-      "Skipping axis/alignment checks.",
-      "Presenting CPM as proven to improve outcomes for every post-TKA patient."
-    ],
-    evidence:"Recent systematic reviews/meta-analyses report no clear ROM advantage of CPM over standard physiotherapy after knee arthroplasty, while a 2026 meta-analysis found advantages for continuous active motion in some outcomes. This supports individualized, protocol-based use rather than routine automatic use.",
-    sources:[
-      ["Journal of Orthopaedic Surgery & Research systematic review/meta-analysis (2024)","https://doi.org/10.1186/s13018-024-04536-y"],
-      ["Indian Journal of Orthopaedics systematic review/meta-analysis (2026)","https://doi.org/10.1007/s43465-025-01681-2"]
-    ]
-  },
-  {
-    id:"laser", name:"Laser", category:"physical", label:"Physical Agents",
-    image:"assets/laser.jpg",
-    units:[["THOR LX2", "Physiotherapy", "A1LD0614", ""], ["THOR LX2", "Sport Medicine", "BGSM-615", ""], ["ASA laser (model not recorded)", "Physiotherapy — Pediatric", "BBPE1302", "Read the model from the rating plate; class and dose tables differ between ASA models."]],
-    videos:[["THOR LX2 — red and near-infrared PBM therapy machine", "https://www.youtube.com/watch?v=rItCEFE5VI0", "Device demo"], ["Training with THOR Photomedicine", "https://www.youtube.com/watch?v=cSpdz0S0rNM", "Device demo"], ["How LLLT works", "https://www.youtube.com/watch?v=VzMJUxalkFo", "Educational"], ["Low-level laser therapy — what it is, how it is applied, research overview", "https://www.youtube.com/watch?v=XbjIgccE9F4", "Educational"], ["What is MLS laser therapy? (ASA technology)", "https://www.youtube.com/watch?v=O-dCzh3dkdk", "Educational"], ["Laser safety — using a medical laser device", "https://www.youtube.com/watch?v=2h00F_3DHMQ", "Safety"]],
-    desc:"Low-level laser/light therapy. Exact wavelength, power, dose and application method are device- and protocol-specific.",
-    use:"Use only within an approved protocol and with appropriate eye protection/safety controls. Do not invent a universal dose because device classes and clinical indications differ.",
-    steps:[
-      "Verify device class, wavelength/output and approved protocol.",
-      "Screen the patient and treatment area for relevant precautions/contraindications.",
-      "Protect eyes as required by the device and treatment protocol.",
-      "Prepare the treatment area and select the prescribed dose/settings.",
-      "Apply the laser to the intended area while monitoring the patient.",
-      "End the session, power down and store the applicator safely."
-    ],
-    points:[
-      "Never aim therapeutic laser at the eyes.",
-      "Known/suspected malignancy and certain pregnancy treatment locations require avoidance according to evidence-based safety guidance.",
-      "The exact dose depends on wavelength, power, area and protocol.",
-      "Follow the device manual and laser-safety policy."
-    ],
-    mistakes:[
-      "Using the same dose for every laser device.",
-      "Ignoring eye protection or aiming near the eye.",
-      "Copying online treatment tables without verifying the device and indication."
-    ],
-    evidence:"Evidence-based safety guidance identifies important treatment restrictions for low-level laser, including avoiding direct ocular exposure and certain treatment locations. Modern consensus statements also emphasize trained professionals, patient assessment and device/manufacturer guidance.",
-    sources:[
-      ["Canadian Physiotherapy Association evidence-based EPA safety review","https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/"],
-      ["SAFE PAMP consensus (BMJ Open, 2024)","https://doi.org/10.1136/bmjopen-2023-075348"]
-    ]
-  },
-  {
-    id:"faradic-vms", name:"Faradic & VMS", category:"electro", label:"Electrotherapy",
-    image:"assets/faradic-vms.jpg",
-    units:[["Chattanooga Intelect Advanced Combo 2762CC", "Physiotherapy — Pediatric", "BBPE3085", "VMS is one of the waveforms on Chattanooga Intelect units."], ["Chattanooga Intelect Advanced Combo 2762CC", "Sport Medicine", "BGSM4643", ""], ["BTL-4825SL Premium", "Physiotherapy", "B1NE4455", ""], ["BTL-4825SL Premium", "Physiotherapy", "B1NE1736", ""]],
-    videos:[["Intelect Advanced Combo — first steps and usage recommendations", "https://www.youtube.com/watch?v=3mIYEyg5zV4", "Device demo · Spanish"], ["BTL-4825 Premium ultrasound and stim combo", "https://www.youtube.com/watch?v=9uoYBcnOF2c", "Device demo"], ["Interferential set-up on a Chattanooga Intelect Legend (related model)", "https://www.youtube.com/watch?v=DEs_MkkShwA", "Educational"], ["More: NMES electrode placement", "https://www.youtube.com/results?search_query=NMES+electrode+placement+physical+therapy+tutorial", "YouTube search"]],
-    desc:"Electrical stimulation modes used for selected muscle re-education and rehabilitation applications. Exact waveform/settings are device-specific.",
-    use:"Electrical stimulation should follow patient screening, correct electrode placement, a validated protocol and continuous monitoring. Do not copy generic parameters between machines.",
-    steps:[
-      "Inspect the unit, leads and electrodes.",
-      "Screen for contraindications/precautions and inspect skin.",
-      "Explain the sensation and place electrodes according to the approved protocol.",
-      "Select the correct waveform/mode and prescribed settings.",
-      "Increase intensity gradually while monitoring patient response and skin.",
-      "Turn output to zero before removing electrodes; clean and document."
-    ],
-    points:[
-      "Do not stimulate over/near implanted electronic devices when it could cause malfunction.",
-      "Avoid inappropriate application over pregnancy-related regions, active DVT/thrombophlebitis, active bleeding or infected tissue according to safety guidance.",
-      "Electrode placement changes the clinical effect.",
-      "Patient feedback and skin checks are essential."
-    ],
-    mistakes:[
-      "Removing electrodes while output is still active.",
-      "Using a copied intensity/frequency without verifying waveform and pulse width.",
-      "Ignoring pacemakers/implanted stimulators or damaged skin."
-    ],
-    evidence:"The 2024 SAFE PAMP consensus supports safety statements for electrical stimulation and stresses clinical assessment. Earlier evidence-based guidance provides specific precautions concerning implanted electronic devices, pregnancy-related areas, malignancy, DVT/thrombophlebitis and other situations.",
-    sources:[
-      ["SAFE PAMP consensus (BMJ Open, 2024)","https://doi.org/10.1136/bmjopen-2023-075348"],
-      ["Evidence-based EPA contraindications review","https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/"],
-      ["Leeds Teaching Hospitals — NMES safety information","https://www.leedsth.nhs.uk/patients/resources/neuromuscular-electrical-stimulation-nmes/"]
-    ]
-  },
-  {
-    id:"balance", name:"Balance", category:"balance", label:"Balance & Functional",
-    image:"assets/balance.jpg",
-    units:[["BIOSWING Posturomed (with MechaTronic measurement)", "Assessment Gym", "B1ASU001", ""]],
-    videos:[["BIOSWING Posturomed — the basic exercises", "https://www.youtube.com/watch?v=giwSIGs6wDA", "Device demo · German"], ["BIOSWING Posturomed — assembly and set-up", "https://www.youtube.com/watch?v=nWm655Gi70k", "Device demo · German"], ["BIOSWING Posturomed — the feedback module", "https://www.youtube.com/watch?v=CF7-LbrrV34", "Device demo · German"]],
-    desc:"Balance assessment/training equipment. The exact platform and software should be identified before adding device-specific test instructions.",
-    use:"Balance systems can provide objective assessment and/or supported training. The protocol should match the patient's ability, diagnosis, goals and fall risk.",
-    steps:[
-      "Check the platform, handles, harness/safety equipment and software.",
-      "Perform a fall-risk and functional safety screen before testing.",
-      "Explain the task and establish the safest starting position.",
-      "Select the validated test/training protocol.",
-      "Stand in the appropriate guarding position and monitor the patient.",
-      "Record the test/training conditions and response."
-    ],
-    points:[
-      "Use guarding and fall-prevention measures appropriate to the patient.",
-      "Test conditions must be reproducible for meaningful comparisons.",
-      "Software scores are measurements, not diagnoses by themselves.",
-      "Identify the exact system before publishing device-specific normative values."
-    ],
-    mistakes:[
-      "Running challenging balance tasks without an appropriate safety setup.",
-      "Comparing scores from different protocols as if they were equivalent.",
-      "Treating a software score as a stand-alone diagnosis."
-    ],
-    evidence:"Commercial clinical balance systems provide structured assessment and rehabilitation workflows, but exact tests and normative data depend on the system. The website intentionally avoids universal cutoffs until the department's exact model is confirmed.",
-    sources:[
-      ["Bertec Balance Advantage Static System manual listing","https://manuals.plus/m/43b4939b77ba1a60e6228140527fe78f5994fd82829631e8adea08824a928f18"],
-      ["HUMAC / Balance System SD manuals and product information","https://smti.co/products/balance-system-sd"]
-    ]
-  },
-  {
-    id:"shockwave", name:"Shockwave", category:"physical", label:"Physical Agents",
-    image:"assets/shockwave.jpg",
-    units:[],
-    videos:[["Radial shockwave therapy for Achilles tendinopathy", "https://www.youtube.com/watch?v=MlB0Wf3o9TQ", "Educational"], ["More: radial vs focused shockwave technique", "https://www.youtube.com/results?search_query=radial+focused+shockwave+therapy+technique+physiotherapy", "YouTube search"]],
-    desc:"Extracorporeal shockwave therapy (radial or focused). Treatment parameters and indications differ by device type and target condition.",
-    use:"Use only after clinical assessment and appropriate diagnosis. Focused and radial devices are not interchangeable, and high-energy focused treatment has additional anatomical restrictions.",
-    steps:[
-      "Confirm diagnosis, treatment target and whether the device is radial or focused.",
-      "Screen for contraindications and relevant precautions.",
-      "Identify the target tissue and position the patient appropriately.",
-      "Use only the approved device-specific protocol and trained technique.",
-      "Monitor pain, skin response and patient tolerance.",
-      "Document device type, applicator, settings, treatment site and response."
-    ],
-    points:[
-      "Active malignancy at the treatment field is a contraindication in current consensus guidance.",
-      "Pregnancy/fetus in the treatment field is a contraindication.",
-      "High-energy focused treatment has additional restrictions involving lung, brain/CNS, certain bones and significant coagulation disorders.",
-      "Training and competency matter; do not use generic internet settings as a protocol."
-    ],
-    mistakes:[
-      "Confusing radial pressure waves with focused ESWT.",
-      "Treating over restricted anatomy because the target is 'nearby'.",
-      "Using a copied energy/frequency recipe without verifying device type and indication."
-    ],
-    evidence:"International and recent expert guidance distinguishes radial and focused shockwave. Contraindications and anatomical restrictions depend on energy type and treatment field. Current literature also emphasizes the need for proper training and individualized application.",
-    sources:[
-      ["ISMST recommendations / consensus","https://shockwavetherapy.org/ismst-recommendations/"],
-      ["ISMST consensus PDF","https://shockwavetherapy.org/wp-content/uploads/2023/11/ISMST-consensus-statement-on-indications-and-contraindications-20161012-final.pdf"],
-      ["BJSM international Delphi recommendations (2024)","https://doi.org/10.1136/bjsports-2024-109082"],
-      ["APTA practice advisory announcement (2025)","https://www.apta.org/article/2025/08/18/now-available-apta-practice-advisory-on-extracorporeal-shockwave-therapy"]
-    ]
-  },
-  {
-    id:"combo", name:"Combination Therapy (Electro + Ultrasound)", category:"electro", label:"Electrotherapy",
-    image:"assets/placeholder.svg",
+    id:"btl-4825", name:"BTL-4825SL Premium", category:"electro", label:"Electrotherapy",
+    image:"assets/btl-4825.jpg", credit:"Still from BTL product video",
     units:[
-      ["BTL-4825SL Premium","Physiotherapy","B1NE4455","2 electrotherapy channels + ultrasound + low-level laser output; works with the BTL Vac unit."],
-      ["BTL-4825SL Premium","Physiotherapy","B1NE1736",""],
-      ["Chattanooga Intelect Advanced Combo 2762CC","Physiotherapy — Pediatric","BBPE3085","2-channel colour combination unit with sEMG."],
-      ["Chattanooga Intelect Advanced Combo 2762CC","Sport Medicine","BGSM4643",""]
+      ["BTL-4825SL Premium","Physiotherapy","B1NE4455",""],
+      ["BTL-4825SL Premium","Physiotherapy","B1NE1736","Installed 2025, 5-year warranty (supplier: BTL)."],
+      ["BTL-4825SL Premium (listed as high-power laser)","Physiotherapy","B1NE2316","The inventory lists this unit as a high-power laser with the same model number. Verify the model on the rating plate."]
     ],
     videos:[
       ["BTL-4825 Premium ultrasound and stim combo","https://www.youtube.com/watch?v=9uoYBcnOF2c","Device demo"],
       ["BTL-4000 Smart and Premium — electrotherapy, ultrasound, laser, magnet","https://www.youtube.com/watch?v=pWZp30Wyu_U","Device demo · Russian"],
-      ["Intelect Advanced Combo Color","https://www.youtube.com/watch?v=hWQ9Srh9VJo","Device demo · Spanish"],
       ["Therapeutic ultrasound — application technique","https://www.youtube.com/watch?v=XP5pQuqTSZE","Educational"]
     ],
-    desc:"Combination units that deliver electrical stimulation and therapeutic ultrasound from one console, separately or together, with optional vacuum electrodes.",
-    use:"Used for electrical stimulation, therapeutic ultrasound, or both at once through the ultrasound head (combined therapy). Each output has its own screening, technique and settings; the preset library is a starting point, not a prescription.",
+    desc:"Combination unit from the BTL-4000 series: two electrotherapy channels, therapeutic ultrasound and a low-level laser output, with optional BTL Vac vacuum electrodes.",
+    use:"Used for electrical stimulation, therapeutic ultrasound, or both at once through the ultrasound head (combined therapy), and for low-level laser. Each output has its own screening, technique and settings; the preset library is a starting point, not a prescription.",
     steps:[
       "Inspect leads, electrodes, vacuum cups and the ultrasound head; switch the unit on.",
-      "Select the modality on the screen: electrotherapy, ultrasound or combination.",
+      "Select the modality on the touch screen: electrotherapy, ultrasound, combination or laser.",
       "Choose the approved protocol or enter the prescribed parameters manually.",
       "Electrotherapy: prepare the skin, fix the electrodes (pads, sponges or vacuum cups) and raise intensity gradually to the patient's reported sensation.",
       "Ultrasound: apply enough coupling gel and keep the head moving slowly over the treatment area for the whole session.",
@@ -318,30 +25,146 @@ const devices = [
     points:[
       "1 MHz ultrasound reaches deeper tissue; 3 MHz is for superficial tissue.",
       "Never run the ultrasound head without gel or hold it still on one spot.",
-      "Electrical-stimulation precautions apply: implanted electronic devices, pregnancy-related regions, malignancy, DVT, damaged or insensate skin.",
-      "In children, avoid ultrasound over growth plates and start stimulation at the lowest intensity."
+      "Do not stimulate over or near implanted electronic devices, pregnancy-related regions, malignancy, active DVT, or damaged or insensate skin.",
+      "Laser output: eye protection for patient and therapist."
     ],
     mistakes:[
       "Using a preset without checking it matches the diagnosis and the approved protocol.",
-      "Too little gel or a stationary ultrasound head.",
+      "Removing electrodes while output is still active.",
       "Raising intensity quickly instead of following the patient's feedback."
     ],
     evidence:"Safety guidance for electrical stimulation and ultrasound comes from the SAFE PAMP consensus and the Canadian evidence-based contraindications review. Device menus and presets are manufacturer content and are not evidence of effectiveness for a given condition.",
     sources:[
       ["BTL-4000 Electrotherapy user's guide (EWH BMET library)","https://bmet.ewh.org/items/cbf4c071-0cfe-4458-926d-c5dca8584345/full"],
       ["BTL Vac user's manual (EWH BMET library)","https://bmet.ewh.org/items/38f32c20-0fa0-4900-baf5-961d9e7de963/full"],
-      ["Chattanooga Intelect Advanced user manual (Spanish PDF)","https://cdn2.shopify.com/s/files/1/2285/0379/files/Manual_de_Usuario_-_Intelect_Advanced.pdf"],
       ["SAFE PAMP consensus (BMJ Open, 2024)","https://doi.org/10.1136/bmjopen-2023-075348"],
       ["Evidence-based EPA contraindications review","https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/"]
     ]
   },
   {
-    id:"hp-laser", name:"High-Power Scanning Laser", category:"physical", label:"Physical Agents",
-    image:"assets/placeholder.svg",
+    id:"intelect", name:"Chattanooga Intelect Advanced Combo", category:"electro", label:"Electrotherapy",
+    image:"assets/intelect-advanced.jpg", credit:"Still from the linked demonstration video (Phisio Basic)",
     units:[
-      ["Level Luxwave (scanning laser)","Physiotherapy","A1NEl007","Manufacturer pages list different wavelengths (808, 1064 or 970–980 nm) — check the label on the unit."],
-      ["BTL high-power laser — model to be verified","Physiotherapy","B1NE2316","The inventory lists model 4825SL Premium for this unit, which is the combination unit. Verify the rating plate."]
+      ["Chattanooga Intelect Advanced Combo 2762CC","Physiotherapy — Pediatric","BBPE3085",""],
+      ["Chattanooga Intelect Advanced Combo 2762CC","Sport Medicine","BGSM4643",""]
     ],
+    videos:[
+      ["Intelect Advanced Combo — first steps and usage recommendations","https://www.youtube.com/watch?v=3mIYEyg5zV4","Device demo · Spanish"],
+      ["Intelect Advanced Combo Color","https://www.youtube.com/watch?v=hWQ9Srh9VJo","Device demo · Spanish"],
+      ["Interferential set-up on a Chattanooga Intelect Legend (related model)","https://www.youtube.com/watch?v=DEs_MkkShwA","Educational"],
+      ["More: NMES electrode placement","https://www.youtube.com/results?search_query=NMES+electrode+placement+physical+therapy+tutorial","YouTube search"]
+    ],
+    desc:"Two-channel colour combination unit: electrical stimulation waveforms (including VMS, interferential, Russian, high-volt and TENS) with therapeutic ultrasound and sEMG.",
+    use:"Used for pain modulation, muscle re-education and strengthening, therapeutic ultrasound, and combined electro-ultrasound treatment. Electrical stimulation should follow patient screening, correct electrode placement, a validated protocol and continuous monitoring.",
+    steps:[
+      "Inspect the unit, leads, electrodes and ultrasound head.",
+      "Screen for contraindications and precautions and inspect the skin.",
+      "From the home screen select electrotherapy, ultrasound or combination, then the waveform or the approved clinical protocol.",
+      "Explain the sensation and place the electrodes as shown for the selected protocol.",
+      "Set the time, then increase intensity gradually while monitoring patient response and skin.",
+      "Turn output to zero before removing electrodes; clean and document."
+    ],
+    points:[
+      "Electrode placement changes the clinical effect.",
+      "Do not stimulate over or near implanted electronic devices when it could cause malfunction.",
+      "With children, start at the lowest intensity, explain the sensation and do not leave the child unattended.",
+      "Avoid ultrasound over growth plates in children."
+    ],
+    mistakes:[
+      "Using a copied intensity or frequency without verifying waveform and pulse width.",
+      "Removing electrodes while output is still active.",
+      "Ignoring pacemakers, implanted stimulators or damaged skin."
+    ],
+    evidence:"The 2024 SAFE PAMP consensus supports safety statements for electrical stimulation and stresses clinical assessment. Earlier evidence-based guidance gives specific precautions for implanted electronic devices, pregnancy-related areas, malignancy, DVT and other situations.",
+    sources:[
+      ["Chattanooga Intelect Advanced user manual (Spanish PDF)","https://cdn2.shopify.com/s/files/1/2285/0379/files/Manual_de_Usuario_-_Intelect_Advanced.pdf"],
+      ["Chattanooga Intelect 2762CC manual on ManualsLib","https://www.manualslib.es/products/Chattanooga-Intelect-2762Cc-123281.html"],
+      ["SAFE PAMP consensus (BMJ Open, 2024)","https://doi.org/10.1136/bmjopen-2023-075348"],
+      ["Leeds Teaching Hospitals — NMES safety information","https://www.leedsth.nhs.uk/patients/resources/neuromuscular-electrical-stimulation-nmes/"]
+    ]
+  },
+  {
+    id:"thor", name:"THOR LX2 Laser", category:"physical", label:"Physical Agents",
+    image:"assets/thor-lx2.jpg", credit:"Photo: THOR Photomedicine",
+    units:[
+      ["THOR LX2","Physiotherapy","A1LD0614",""],
+      ["THOR LX2","Sport Medicine","BGSM-615",""]
+    ],
+    videos:[
+      ["THOR LX2 — red and near-infrared PBM therapy machine","https://www.youtube.com/watch?v=rItCEFE5VI0","Device demo"],
+      ["Training with THOR Photomedicine","https://www.youtube.com/watch?v=cSpdz0S0rNM","Device demo"],
+      ["How LLLT works","https://www.youtube.com/watch?v=VzMJUxalkFo","Educational"],
+      ["Low-level laser therapy — what it is, how it is applied, research overview","https://www.youtube.com/watch?v=XbjIgccE9F4","Educational"]
+    ],
+    desc:"Low-level laser / photobiomodulation control unit that drives interchangeable probes: single laser, laser cluster or red and near-infrared LED cluster.",
+    use:"Use only within an approved protocol and with appropriate eye protection and safety controls. Do not invent a universal dose: it depends on the probe, wavelength, power and indication.",
+    steps:[
+      "Connect the probe chosen for the indication, insert the key and switch on.",
+      "Screen the patient and treatment area for relevant precautions and contraindications.",
+      "Set the dose time from the treatment guidelines supplied with the unit.",
+      "Protect eyes as required for laser probes.",
+      "Hold the probe in contact with clean skin, still on each point, until the end-of-dose signal; then move to the next point.",
+      "End the session, power down, clean the probe head and store it safely."
+    ],
+    points:[
+      "Never aim therapeutic laser at the eyes.",
+      "Known or suspected malignancy and certain pregnancy treatment locations require avoidance according to evidence-based safety guidance.",
+      "The exact dose depends on wavelength, power, area and protocol.",
+      "Sources mention LX2, LX2M and LX2.3 versions — confirm the exact model and probes."
+    ],
+    mistakes:[
+      "Using the same dose for every probe.",
+      "Ignoring eye protection or aiming near the eye.",
+      "Copying online treatment tables without verifying the device and indication."
+    ],
+    evidence:"Evidence-based safety guidance identifies important treatment restrictions for low-level laser, including avoiding direct ocular exposure and certain treatment locations. Modern consensus statements also emphasize trained professionals, patient assessment and manufacturer guidance.",
+    sources:[
+      ["THOR video library","https://thorlaser.com/video"],
+      ["THOR training courses","https://www.thorlaser.com/courses/"],
+      ["Canadian Physiotherapy Association evidence-based EPA safety review","https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/"],
+      ["SAFE PAMP consensus (BMJ Open, 2024)","https://doi.org/10.1136/bmjopen-2023-075348"]
+    ]
+  },
+  {
+    id:"asa", name:"ASA Laser", category:"physical", label:"Physical Agents",
+    image:"assets/placeholder.svg",
+    units:[["ASA laser — model not recorded","Physiotherapy — Pediatric","BBPE1302","S/N 60011302. Read the model from the rating plate; laser class and dose tables differ between ASA models."]],
+    videos:[
+      ["What is MLS laser therapy? (ASA technology)","https://www.youtube.com/watch?v=O-dCzh3dkdk","Educational"],
+      ["MLS therapy — shoulder pain protocol on Mphi / M6","https://www.youtube.com/watch?v=H69XteMihj4","Device demo · Polish"]
+    ],
+    desc:"ASA therapeutic laser. ASA units use MLS technology: synchronised 808 nm continuous and 905 nm pulsed emission. The department's exact model is not recorded, so this entry is general.",
+    use:"Used for pain and inflammation in soft-tissue and joint conditions within an approved protocol. Some ASA models are Class 4 lasers, which require room controls and wavelength-matched eyewear.",
+    steps:[
+      "Identify the exact model and its laser class before first use.",
+      "Switch on with the key and select the approved protocol for the condition and area.",
+      "Give protective eyewear to the patient and therapist; remove reflective objects.",
+      "Handpiece: hold on the point or scan the area. Robotised head: set the distance and scan area, then start.",
+      "Stay with the patient and stop for uncomfortable heat.",
+      "Power down, remove the key and document."
+    ],
+    points:[
+      "Never direct the beam toward the eyes.",
+      "In children, avoid growth plates, the eyes and the thyroid region and use the paediatric doses in the manual.",
+      "Avoid known or suspected malignancy and the pregnant abdomen.",
+      "Do not use until the model and its manual are confirmed."
+    ],
+    mistakes:[
+      "Assuming a low-level dose table applies to a Class 4 model.",
+      "Treating a child with adult parameters.",
+      "Running the session without eyewear for an accompanying parent."
+    ],
+    evidence:"The same evidence-based laser safety guidance applies. Published specifications for ASA models conflict between sources, so figures should be taken from the unit's own manual.",
+    sources:[
+      ["ASA Mphi product page (MedicalExpo)","https://www.medicalexpo.com/prod/asa/product-67650-510929.html"],
+      ["ASA M6 product page (MedicalExpo)","https://www.medicalexpo.com/prod/asa/product-67650-510935.html"],
+      ["Canadian Physiotherapy Association evidence-based EPA safety review","https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/"]
+    ]
+  },
+  {
+    id:"luxwave", name:"Level Luxwave Scanning Laser", category:"physical", label:"Physical Agents",
+    image:"assets/level-luxwave.jpg", credit:"Photo: Level Medical",
+    units:[["Level Luxwave","Physiotherapy","A1NEl007","S/N lw8l007. Manufacturer pages list different wavelengths (808, 1064 or 970–980 nm) — check the label on the unit."]],
     videos:[
       ["Laser safety — using a medical laser device","https://www.youtube.com/watch?v=2h00F_3DHMQ","Safety"],
       ["More: Level Luxwave scanning laser","https://www.youtube.com/results?search_query=Level+Medical+Luxwave+laser","YouTube search"]
@@ -375,52 +198,161 @@ const devices = [
     ]
   },
   {
-    id:"accu-spina", name:"Spinal Decompression (Accu-SPINA)", category:"mechanical", label:"Mechanical Therapy",
+    id:"tecar", name:"TECAR Therapy (Level GW-100)", category:"physical", label:"Physical Agents",
     image:"assets/placeholder.svg",
+    units:[["Level GW-100","Sport Medicine","BGSML055","S/N DCL055. No manufacturer manual was found online for this model — request it from the supplier."]],
+    videos:[
+      ["TECAR — transfer of energy capacitive and resistive (Harley Street Physiotherapy)","https://www.youtube.com/watch?v=if2Cufpa69A","Educational"],
+      ["More: capacitive / resistive application technique","https://www.youtube.com/results?search_query=tecar+therapy+technique+capacitive+resistive+tutorial","YouTube search"]
+    ],
+    desc:"TECAR (transfer of energy capacitive and resistive) therapy: radiofrequency current that produces heat inside the tissue through a capacitive or a resistive electrode.",
+    use:"TECAR uses radiofrequency electrical energy with capacitive/resistive coupling. Evidence for musculoskeletal pain has grown, but reviews note heterogeneity and limitations; device-specific claims should not be presented as established facts.",
+    steps:[
+      "Verify the exact device, applicator and manufacturer instructions.",
+      "Screen the patient and treatment area according to the device manual and hospital protocol.",
+      "Place the return plate under the patient close to the treatment area, in full skin contact, and apply the conductive cream.",
+      "Start with the capacitive electrode on superficial tissue, then the resistive electrode for deeper structures, keeping the electrode moving.",
+      "Raise power gradually to a comfortable warmth and monitor skin sensation continuously.",
+      "Document device, mode, settings, area and response."
+    ],
+    points:[
+      "Do not substitute a generic TECAR setting for a model-specific protocol.",
+      "Not with pacemakers or implanted electronic devices, pregnancy, malignancy, thrombosis or active infection.",
+      "Caution over metal implants and with reduced heat sensation.",
+      "Evidence is not the same as a manufacturer's marketing claim."
+    ],
+    mistakes:[
+      "Calling all TECAR devices equivalent.",
+      "Holding the electrode still on one spot.",
+      "Publishing fixed parameters before the exact model is verified."
+    ],
+    evidence:"A systematic review/meta-analysis found reductions in musculoskeletal pain but substantial heterogeneity. Another evidence review described the overall literature as sparse and low level. The site therefore avoids universal parameters and strong efficacy claims.",
+    sources:[
+      ["PubMed — TECAR systematic review/meta-analysis (2023)","https://pubmed.ncbi.nlm.nih.gov/36698689/"],
+      ["ScienceDirect — scoping review of TECAR evidence","https://www.sciencedirect.com/science/article/abs/pii/S1779012320300838"]
+    ]
+  },
+  {
+    id:"accu-spina", name:"Accu-SPINA Spinal Decompression", category:"mechanical", label:"Mechanical Therapy",
+    image:"assets/accu-spina.jpg", credit:"Photo: IDD Therapy UK clinic listing",
     units:[["Accu-SPINA — IDD Therapy","Physiotherapy — Pediatric","BBPE-866","S/N D70858-121-0725-866"]],
     videos:[
       ["Is IDD Therapy and the Accu-SPINA just traction? Stephen Small explains","https://www.youtube.com/watch?v=M9M8DcBha1k","Educational"],
       ["IDD Therapy — Health Journal TV episode","https://www.youtube.com/watch?v=U0KMhBQWkAE","Educational"],
+      ["Accommodating an Accu-SPINA in your clinic","https://www.youtube.com/watch?v=WDupf3Dah2c","Device demo"],
       ["Accu-SPINA for IDD Therapy — official channel","https://www.youtube.com/@Accuspina","Channel"]
     ],
     desc:"Computer-controlled spinal decompression table (North American Medical). Applies a distraction force at a calculated angle to target a spinal level, in cycles of pull and partial relaxation.",
-    use:"Used for lumbar or cervical decompression in selected disc-related presentations after clinical assessment. The same assessment-first rule as mechanical traction applies. Use in children requires a physician's decision and weight-based force.",
+    use:"Used for lumbar or cervical decompression in selected disc-related presentations after a clinical assessment. It is not a routine treatment for every low-back-pain presentation. Use in children requires a physician's decision and weight-based force.",
     steps:[
-      "Confirm identity, referral, diagnosis, imaging and red flags.",
+      "Confirm patient identity, referral/plan, diagnosis, imaging and relevant red flags.",
+      "Inspect the table, harnesses and emergency stop.",
       "Enter the patient data and target level so the system sets the angle of pull.",
       "Fit the chest and pelvic harnesses firmly with the patient supine and the knees supported.",
-      "Enter only the prescribed maximum force; early sessions start low.",
-      "Give the patient the stop switch, start, and monitor symptoms for the whole session (about 25 minutes).",
-      "Release the harnesses slowly, let the patient rest before standing, and document."
+      "Enter only the prescribed force; give the patient the stop switch, start and monitor symptoms for the whole session (about 25 minutes).",
+      "Release the harnesses slowly, let the patient rest before standing, and document settings and response."
     ],
     points:[
-      "The patient must hold the emergency stop.",
+      "A thorough assessment comes before traction.",
+      "The patient should have a clear way to stop/alert the therapist.",
       "Not for fracture, severe osteoporosis, tumour, spinal instability, pregnancy or recent spinal fixation.",
-      "New or worsening neurological symptoms end the session.",
-      "Force, angle and progression come from the manual and the approved protocol."
+      "Force, angle and progression must come from the actual manual/protocol."
     ],
     mistakes:[
       "Loose harnesses, so the force moves the patient instead of the spine.",
       "Quoting manufacturer success rates to patients as established outcomes.",
-      "Using adult force settings for a child."
+      "Ignoring new neurological symptoms or worsening pain."
     ],
-    evidence:"Success rates around 90% that circulate for IDD Therapy come from the manufacturer and clinics. A randomized trial comparing IDD Therapy with standard physical therapy is registered (NCT00165893); its published results were not confirmed for this guide. The APTA/JOSPT guidance on traction quoted in the Traction entry is the relevant independent reference.",
+    evidence:"Success rates around 90% that circulate for IDD Therapy come from the manufacturer and clinics. A randomized trial comparing IDD Therapy with standard physical therapy is registered (NCT00165893); its published results were not confirmed for this guide. The 2021 APTA/JOSPT low-back-pain guideline reports preliminary evidence for traction in a specific subgroup with nerve-root compression signs, and recommends against routine traction for non-radicular or chronic low-back pain.",
     sources:[
       ["ClinicalTrials.gov — IDD Therapy vs non-surgical care (NCT00165893)","https://clinicaltrials.gov/study/NCT00165893"],
       ["JOSPT / APTA Clinical Practice Guideline (2021)","https://doi.org/10.2519/jospt.2021.0304"]
     ]
   },
   {
-    id:"kinevia", name:"Active-Passive Trainer (Kinevia Duo)", category:"rehab", label:"Rehabilitation",
-    image:"assets/placeholder.svg",
+    id:"artromot", name:"ARTROMOT S3 Shoulder CPM", category:"rehab", label:"Rehabilitation",
+    image:"assets/artromot-s3.jpg", credit:"Photo: ORMED / DJO product image",
+    units:[["ORMED ARTROMOT S3 Comfort","Physiotherapy","B1NE1070","S/N 31070"]],
+    videos:[
+      ["Artromot S3 CPM — set-up for the shoulder","https://www.youtube.com/watch?v=5E2zJj8Yv18","Device demo"],
+      ["ARTROMOT S3 — product overview","https://www.youtube.com/watch?v=kdbVd9Jl_X0","Device demo"],
+      ["Artromot S3 — instructions for the shoulder joint","https://www.youtube.com/watch?v=iBpq4P7_EDk","Device demo · Russian"]
+    ],
+    desc:"Continuous passive motion chair for the shoulder: elevation, abduction/adduction and rotation, set from a handheld programming unit. The Comfort version adds a headrest and a warm-up programme.",
+    use:"CPM passively moves the joint through a programmed range. It should complement, not automatically replace, active rehabilitation when active exercise is appropriate.",
+    steps:[
+      "Confirm the prescribed movements, postoperative restrictions and protocol.",
+      "Set the chair for the affected side and seat the patient with the back against the backrest.",
+      "Adjust arm height and the upper-arm and forearm supports so the device axis matches the shoulder axis; fix the straps without pressure.",
+      "Set the approved ROM for each movement, then speed, pause and duration on the handheld unit.",
+      "Give the patient the handheld unit (stop key), start slowly and watch the first full cycles.",
+      "Stop, reposition or escalate if the patient develops concerning symptoms; document ROM, speed, duration and tolerance."
+    ],
+    points:[
+      "Correct anatomical alignment is critical.",
+      "Never exceed the surgeon/department-approved ROM.",
+      "The device is not a substitute for individualized active rehabilitation.",
+      "Not with unstable fractures, acute joint infection or thrombosis."
+    ],
+    mistakes:[
+      "Increasing ROM simply because the patient tolerates the machine.",
+      "Poor axis alignment causing unwanted joint loading.",
+      "Treating CPM as a universal requirement after surgery."
+    ],
+    evidence:"Upper-limb evidence is condition-specific. A systematic review after rotator-cuff repair did not support routine CPM as superior to standard rehabilitation. Use should therefore follow the surgical/department protocol rather than a universal recipe.",
+    sources:[
+      ["ARTROMOT-S3 operating instructions (2012)","https://bioclinicalservices.com.au/chattanooga-group/clinical/artromot-s3-cpm-system-operating-instructions-rev-04-06-march-2012"],
+      ["Clin Rehabil systematic review — CPM after rotator cuff repair (2011)","https://pubmed.ncbi.nlm.nih.gov/20943710/"]
+    ]
+  },
+  {
+    id:"cpmotion", name:"BTL CPMotion K Elite Knee CPM", category:"rehab", label:"Rehabilitation",
+    image:"assets/btl-cpmotion.jpg", credit:"Photo: BTL",
+    units:[["BTL CPMotion K Elite","Sport Medicine","BGSM3722","S/N 09300B003722"]],
+    videos:[
+      ["BTL CPMotion — product video","https://www.youtube.com/watch?v=nbnnstnGg18","Device demo"],
+      ["BTL CPMotion — product video (2)","https://www.youtube.com/watch?v=RWIr8BU5CyQ","Device demo"],
+      ["Knee CPM machines — what you need to know","https://www.youtube.com/watch?v=UST32Ff9A_E","Educational"],
+      ["Using a CPM machine after ACL surgery","https://www.youtube.com/watch?v=Pdfjyfy0v_M","Educational"]
+    ],
+    desc:"Continuous passive motion for the knee and hip, with a touch-screen remote, preset and user programmes and an optional ankle module. Knee range per the manufacturer: -10° to 123°.",
+    use:"CPM can provide standardized passive movement when it is part of an approved rehabilitation plan. Current evidence does not support treating CPM as universally superior to active/standard physiotherapy after knee arthroplasty.",
+    steps:[
+      "Verify the prescription/protocol and the permitted ROM.",
+      "Inspect the machine, padding and straps.",
+      "Set the thigh and calf lengths so the device axis matches the knee axis; secure the foot and straps.",
+      "Set only the approved extension and flexion limits, speed and duration on the remote.",
+      "Monitor pain, swelling, skin and alignment throughout the session; the remote stays with the patient.",
+      "Stop safely, remove the limb and document the session."
+    ],
+    points:[
+      "Do not exceed prescribed ROM.",
+      "Alignment and patient comfort must be checked continuously.",
+      "CPM should be integrated with the overall rehabilitation plan.",
+      "Document actual settings, not just 'CPM done'."
+    ],
+    mistakes:[
+      "Assuming more ROM or longer duration is always better.",
+      "Skipping axis/alignment checks.",
+      "Presenting CPM as proven to improve outcomes for every post-TKA patient."
+    ],
+    evidence:"Recent systematic reviews/meta-analyses report no clear ROM advantage of CPM over standard physiotherapy after knee arthroplasty, while a 2026 meta-analysis found advantages for continuous active motion in some outcomes. This supports individualized, protocol-based use rather than routine automatic use.",
+    sources:[
+      ["BTL CPMotion product page","https://www.btlnet.com/cpmotion"],
+      ["Journal of Orthopaedic Surgery & Research systematic review/meta-analysis (2024)","https://doi.org/10.1186/s13018-024-04536-y"],
+      ["Indian Journal of Orthopaedics systematic review/meta-analysis (2026)","https://doi.org/10.1007/s43465-025-01681-2"]
+    ]
+  },
+  {
+    id:"kinevia", name:"Kinetec Kinevia Duo", category:"rehab", label:"Rehabilitation",
+    image:"assets/kinevia-duo.jpg", credit:"Photo: Kinetec product image",
     units:[["Kinetec Kinevia Duo","Physiotherapy","A1NE0622","Trains arms and legs; the inventory lists it under leg and ankle exercisers."]],
     videos:[
       ["Kinetec Kinevia Duo — overview and patient set-up","https://www.youtube.com/watch?v=Gjzc63HPs4c","Device demo"],
       ["Kinevia Duo active-passive trainer — overview and patient set-up (2)","https://www.youtube.com/watch?v=wUkQc9lDuuU","Device demo"],
-      ["Kinevia and Kinevia Duo","https://www.youtube.com/watch?v=QC1B9wo1q64","Device demo"],
-      ["Kinetec official channel","https://www.youtube.com/c/kinetecsas/videos","Channel"]
+      ["Kinevia and Kinevia Duo","https://www.youtube.com/watch?v=QC1B9wo1q64","Device demo"]
     ],
-    desc:"Motorised cycle with a leg unit and an arm unit, used from a chair or wheelchair. Passive, assisted, active (resistance) and symmetry modes on a 7-inch touch screen.",
+    desc:"Motorised active-passive trainer with a leg unit and an arm unit, used from a chair or wheelchair. Passive, assisted, active (resistance) and symmetry modes on a 7-inch touch screen.",
     use:"Used for early passive movement and to progress patients to assisted and active cycling, for example after stroke or spinal cord injury, in multiple sclerosis or Parkinson's disease, and for patients with low mobility.",
     steps:[
       "Bring the chair or wheelchair into position and lock the brakes.",
@@ -444,13 +376,50 @@ const devices = [
     evidence:"No device-specific clinical trial was identified for this guide. The description is based on manufacturer and distributor information.",
     sources:[
       ["Performance Health — Kinevia Duo product information","https://www.performancehealth.com/kinevia-duo-active-passive-trainer"],
-      ["John Preston — Kinetec Kinevia Duo","https://www.johnpreston.ie/kinetec-kinevia-duo-active-passive-cycle"]
+      ["John Preston — Kinetec Kinevia Duo","https://www.johnpreston.ie/kinetec-kinevia-duo-active-passive-cycle"],
+      ["Kinetec official video channel","https://www.youtube.com/c/kinetecsas/videos"]
     ]
   },
   {
-    id:"digimax", name:"Isometric Strength Test (Digimax)", category:"balance", label:"Balance & Functional",
+    id:"posturomed", name:"Posturomed Balance Platform", category:"balance", label:"Balance & Functional",
+    image:"assets/posturomed.jpg", credit:"Photo: HAIDER BIOSWING",
+    units:[["MechaTronic Posturomed","Assessment Gym","B1ASU001","In service since 2009. The platform is built by HAIDER BIOSWING."]],
+    videos:[
+      ["BIOSWING Posturomed — the basic exercises","https://www.youtube.com/watch?v=giwSIGs6wDA","Device demo · German"],
+      ["BIOSWING Posturomed — assembly and set-up","https://www.youtube.com/watch?v=nWm655Gi70k","Device demo · German"],
+      ["BIOSWING Posturomed — the feedback module","https://www.youtube.com/watch?v=CF7-LbrrV34","Device demo · German"]
+    ],
+    desc:"Damped, horizontally oscillating unstable platform for sensorimotor assessment and training. Instability is graded with the platform brakes; with the measurement module the platform movement is recorded.",
+    use:"Balance systems can provide objective assessment and/or supported training. The protocol should match the patient's ability, diagnosis, goals and fall risk.",
+    steps:[
+      "Check the platform, brakes, handrail and software.",
+      "Perform a fall-risk and functional safety screen before testing.",
+      "Start with the brakes locked and the patient holding the handrail; explain the task.",
+      "Progress: two-leg stance, stepping in place, single-leg stance; then release one brake, then both.",
+      "Stand in the appropriate guarding position and monitor the patient.",
+      "Record the test/training conditions (brakes, stance, eyes, time) and response."
+    ],
+    points:[
+      "Use guarding and fall-prevention measures appropriate to the patient.",
+      "Test conditions must be reproducible for meaningful comparisons.",
+      "Software scores are measurements, not diagnoses by themselves.",
+      "Do not use before full weight bearing is permitted."
+    ],
+    mistakes:[
+      "Running challenging balance tasks without an appropriate safety setup.",
+      "Comparing scores from different brake or stance conditions as if they were equivalent.",
+      "Treating a software score as a stand-alone diagnosis."
+    ],
+    evidence:"Manufacturer material describes the Posturomed as a sensorimotor prevention, therapy and diagnosis device. Normative values depend on the test condition, so this guide gives no universal cut-offs.",
+    sources:[
+      ["BIOSWING Posturomed user guide (English PDF)","https://www.fisaude.pt/files/User-guide-BIOSWING-Posturomed-MDR-2017_compressed.pdf"],
+      ["HAIDER BIOSWING — Posturomed","https://www.bioswing.de/en/therapy-systems/posturomed/"]
+    ]
+  },
+  {
+    id:"digimax", name:"Digimax Isometric Strength Test", category:"balance", label:"Balance & Functional",
     image:"assets/placeholder.svg",
-    units:[["MechaTronic Digimax","Assessment Gym","B1AS0001","Listed in the inventory as an electronic balance; published sources describe Digimax as isometric force measurement. Confirm on the unit."]],
+    units:[["MechaTronic Digimax","Assessment Gym","B1AS0001","In service since 2009. Listed in the inventory as an electronic balance; published sources describe Digimax as isometric force measurement. Confirm on the unit."]],
     videos:[
       ["More: Digimax isometric strength test","https://www.youtube.com/results?search_query=Digimax+isometric+strength+test+mechatronic","YouTube search"]
     ],
@@ -481,9 +450,9 @@ const devices = [
     ]
   },
   {
-    id:"tmg", name:"Tensiomyography (TMG)", category:"balance", label:"Balance & Functional",
+    id:"tmg", name:"TMG S1 Tensiomyography", category:"balance", label:"Balance & Functional",
     image:"assets/placeholder.svg",
-    units:[["TMG S1","Assessment Gym","B1AS5209",""]],
+    units:[["TMG S1","Assessment Gym","B1AS5209","S/N 15-209. In service since 2009."]],
     videos:[
       ["More: tensiomyography measurement demonstration","https://www.youtube.com/results?search_query=TMG+tensiomyography+measurement+demonstration","YouTube search"]
     ],
@@ -522,12 +491,24 @@ const empty = document.getElementById("emptyState");
 const input = document.getElementById("searchInput");
 const filter = document.getElementById("categoryFilter");
 
+function videoCard(v, sub){
+  const yt = v[1].match(/[?&]v=([\w-]{11})/);
+  const thumb = yt ? ` style="background-image:url('https://i.ytimg.com/vi/${yt[1]}/hqdefault.jpg')"` : "";
+  return `
+  <a class="video-card" href="${v[1]}" target="_blank" rel="noopener">
+    <div class="video-thumb${yt ? " has-thumb" : ""}"${thumb}><span>▶</span></div>
+    <span class="video-tag">${v[2]}</span>
+    <h3>${v[0]}</h3>
+    ${sub ? `<p>${sub}</p>` : ""}
+  </a>`;
+}
+
 function renderCards(){
   const q = input.value.trim().toLowerCase();
   const cat = filter.value;
   const list = devices.filter(d =>
     (cat === "all" || d.category === cat) &&
-    (!q || `${d.name} ${d.label} ${d.desc} ${d.use} ${(d.units||[]).map(u=>u[0]+" "+u[2]).join(" ")}`.toLowerCase().includes(q))
+    (!q || `${d.name} ${d.label} ${d.desc} ${d.use} ${d.units.map(u=>u[0]+" "+u[2]).join(" ")}`.toLowerCase().includes(q))
   );
   grid.innerHTML = list.map(d => `
     <article class="card">
@@ -548,22 +529,21 @@ function openDevice(id){
   if(!d) return;
   document.getElementById("modalImage").src = d.image;
   document.getElementById("modalImage").alt = d.name;
+  document.getElementById("modalCredit").textContent = d.credit || "";
   document.getElementById("modalCategory").textContent = d.label;
   document.getElementById("modalTitle").textContent = d.name;
   document.getElementById("modalDescription").textContent = d.desc;
+  document.getElementById("modalUnits").innerHTML = d.units.map(u=>`<li><strong>${u[0]}</strong> — ${u[1]} · <code>${u[2]}</code>${u[3] ? `<small>${u[3]}</small>` : ""}</li>`).join("");
+  document.getElementById("modalVideos").innerHTML = d.videos.map(v=>videoCard(v)).join("");
   document.getElementById("modalUse").textContent = d.use;
   document.getElementById("modalSteps").innerHTML = d.steps.map(x=>`<li>${x}</li>`).join("");
   document.getElementById("modalPoints").innerHTML = d.points.map(x=>`<li>${x}</li>`).join("");
   document.getElementById("modalMistakes").innerHTML = d.mistakes.map(x=>`<li>${x}</li>`).join("");
   document.getElementById("modalEvidence").textContent = d.evidence;
   document.getElementById("modalSources").innerHTML = d.sources.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a></li>`).join("");
-  const units = d.units || [], vids = d.videos || [];
-  document.getElementById("modalUnitsSection").style.display = units.length ? "" : "none";
-  document.getElementById("modalUnits").innerHTML = units.map(u=>`<li><strong>${u[0]}</strong> — ${u[1]} · <code>${u[2]}</code>${u[3] ? `<small>${u[3]}</small>` : ""}</li>`).join("");
-  document.getElementById("modalVideosSection").style.display = vids.length ? "" : "none";
-  document.getElementById("modalVideos").innerHTML = vids.map(v=>`<li><a href="${v[1]}" target="_blank" rel="noopener">▶ ${v[0]}</a> <span class="video-tag">${v[2]}</span></li>`).join("");
   document.getElementById("deviceModal").classList.add("open");
   document.getElementById("deviceModal").setAttribute("aria-hidden","false");
+  document.querySelector(".modal-panel").scrollTop = 0;
   document.body.style.overflow="hidden";
 }
 function closeModal(){
@@ -587,20 +567,6 @@ document.getElementById("referenceBtn").addEventListener("click",()=>{
   document.getElementById("equipment").scrollIntoView({behavior:"smooth"});
 });
 
-const videoGrid = document.getElementById("videoGrid");
-const seenVideos = new Set();
-videoGrid.innerHTML = devices.flatMap(d => (d.videos||[]).map(v => ({d, v})))
-  .filter(({v}) => !seenVideos.has(v[1]) && seenVideos.add(v[1]))
-  .map(({d, v}) => {
-    const yt = v[1].match(/[?&]v=([\w-]{11})/);
-    const thumb = yt ? ` style="background-image:url('https://i.ytimg.com/vi/${yt[1]}/hqdefault.jpg')"` : "";
-    return `
-  <a class="video-card" href="${v[1]}" target="_blank" rel="noopener">
-    <div class="video-thumb${yt ? " has-thumb" : ""}"${thumb}><span>▶</span></div>
-    <span class="video-tag">${v[2]}</span>
-    <h3>${v[0]}</h3>
-    <p>${d.name}</p>
-  </a>`;
-  }).join("");
+document.getElementById("videoGrid").innerHTML = devices.flatMap(d => d.videos.map(v => videoCard(v, d.name))).join("");
 
 renderCards();
