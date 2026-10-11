@@ -379,39 +379,6 @@ const devices = [
       ["BIOSWING Posturomed user guide (English PDF)","https://www.fisaude.pt/files/User-guide-BIOSWING-Posturomed-MDR-2017_compressed.pdf"],
       ["HAIDER BIOSWING — Posturomed","https://www.bioswing.de/en/therapy-systems/posturomed/"]
     ]
-  },
-  {
-    id:"digimax", name:"Digimax Isometric Strength Test", category:"balance", label:"Balance & Functional",
-    image:"assets/placeholder.svg",
-    units:[["MechaTronic Digimax","Assessment Gym","B1AS0001","In service since 2009. Listed in the inventory as an electronic balance; published sources describe Digimax as isometric force measurement. Confirm on the unit."]],
-    videos:[
-      ["More: Digimax isometric strength test","https://www.youtube.com/results?search_query=Digimax+isometric+strength+test+mechatronic","YouTube search"]
-    ],
-    desc:"Force sensor linked to a computer that records maximal isometric (no movement) force of a muscle group and compares sides.",
-    use:"Used for objective strength assessment before and after rehabilitation and for side-to-side comparison. Results are only comparable when position, joint angle and instructions are identical.",
-    steps:[
-      "Warm the patient up for about 10 minutes.",
-      "Fix the force unit securely and connect the sensor to the computer.",
-      "Open the software, choose the isometric test and select or register the patient.",
-      "Set the test position and measure the joint angle with a goniometer; record it.",
-      "Start the measurement and ask for a maximal contraction of about 6 seconds; rest between trials.",
-      "Save the results and document position and angle."
-    ],
-    points:[
-      "Same position and joint angle every time.",
-      "Tell the patient to breathe and not hold their breath.",
-      "Postpone maximal testing with acute injury, recent surgery or uncontrolled blood pressure.",
-      "A number is a measurement, not a diagnosis."
-    ],
-    mistakes:[
-      "Testing without a warm-up.",
-      "Comparing results taken at different joint angles.",
-      "A force unit that is not fixed and moves during the effort."
-    ],
-    evidence:"The steps follow a published standard operating procedure for Digimax force measurement from Ruhr-Universität Bochum (2012, German). No manufacturer manual was found online.",
-    sources:[
-      ["Ruhr-Universität Bochum — SOP Kraftmessung Digimax (German PDF, may require login)","https://moodle.ruhr-uni-bochum.de/pluginfile.php/4443595/mod_resource/content/0/SOP%20Kraftmessung%20Digimax.pdf"]
-    ]
   }
 ];
 
