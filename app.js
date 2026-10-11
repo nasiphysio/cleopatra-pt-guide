@@ -126,42 +126,6 @@ const devices = [
     ]
   },
   {
-    id:"asa", name:"ASA Laser", category:"physical", label:"Physical Agents",
-    image:"assets/placeholder.svg",
-    units:[["ASA laser — model not recorded","Physiotherapy — Pediatric","BBPE1302","S/N 60011302. Read the model from the rating plate; laser class and dose tables differ between ASA models."]],
-    videos:[
-      ["What is MLS laser therapy? (ASA technology)","https://www.youtube.com/watch?v=O-dCzh3dkdk","Educational"],
-      ["MLS therapy — shoulder pain protocol on Mphi / M6","https://www.youtube.com/watch?v=H69XteMihj4","Device demo · Polish"]
-    ],
-    desc:"ASA therapeutic laser. ASA units use MLS technology: synchronised 808 nm continuous and 905 nm pulsed emission. The department's exact model is not recorded, so this entry is general.",
-    use:"Used for pain and inflammation in soft-tissue and joint conditions within an approved protocol. Some ASA models are Class 4 lasers, which require room controls and wavelength-matched eyewear.",
-    steps:[
-      "Identify the exact model and its laser class before first use.",
-      "Switch on with the key and select the approved protocol for the condition and area.",
-      "Give protective eyewear to the patient and therapist; remove reflective objects.",
-      "Handpiece: hold on the point or scan the area. Robotised head: set the distance and scan area, then start.",
-      "Stay with the patient and stop for uncomfortable heat.",
-      "Power down, remove the key and document."
-    ],
-    points:[
-      "Never direct the beam toward the eyes.",
-      "In children, avoid growth plates, the eyes and the thyroid region and use the paediatric doses in the manual.",
-      "Avoid known or suspected malignancy and the pregnant abdomen.",
-      "Do not use until the model and its manual are confirmed."
-    ],
-    mistakes:[
-      "Assuming a low-level dose table applies to a Class 4 model.",
-      "Treating a child with adult parameters.",
-      "Running the session without eyewear for an accompanying parent."
-    ],
-    evidence:"The same evidence-based laser safety guidance applies. Published specifications for ASA models conflict between sources, so figures should be taken from the unit's own manual.",
-    sources:[
-      ["ASA Mphi product page (MedicalExpo)","https://www.medicalexpo.com/prod/asa/product-67650-510929.html"],
-      ["ASA M6 product page (MedicalExpo)","https://www.medicalexpo.com/prod/asa/product-67650-510935.html"],
-      ["Canadian Physiotherapy Association evidence-based EPA safety review","https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/"]
-    ]
-  },
-  {
     id:"luxwave", name:"Level Luxwave Scanning Laser", category:"physical", label:"Physical Agents",
     image:"assets/level-luxwave.jpg", credit:"Photo: Level Medical",
     units:[["Level Luxwave","Physiotherapy","A1NEl007","S/N lw8l007. Manufacturer pages list different wavelengths (808, 1064 or 970–980 nm) — check the label on the unit."]],
@@ -447,41 +411,6 @@ const devices = [
     evidence:"The steps follow a published standard operating procedure for Digimax force measurement from Ruhr-Universität Bochum (2012, German). No manufacturer manual was found online.",
     sources:[
       ["Ruhr-Universität Bochum — SOP Kraftmessung Digimax (German PDF, may require login)","https://moodle.ruhr-uni-bochum.de/pluginfile.php/4443595/mod_resource/content/0/SOP%20Kraftmessung%20Digimax.pdf"]
-    ]
-  },
-  {
-    id:"tmg", name:"TMG S1 Tensiomyography", category:"balance", label:"Balance & Functional",
-    image:"assets/placeholder.svg",
-    units:[["TMG S1","Assessment Gym","B1AS5209","S/N 15-209. In service since 2009."]],
-    videos:[
-      ["More: tensiomyography measurement demonstration","https://www.youtube.com/results?search_query=TMG+tensiomyography+measurement+demonstration","YouTube search"]
-    ],
-    desc:"Non-invasive muscle assessment: a 1 ms electrical pulse makes the muscle contract and a displacement sensor on the muscle belly records its radial movement.",
-    use:"Used to measure contraction time (Tc), maximal displacement (Dm), delay, sustain and relaxation times, and to compare sides or agonist and antagonist. It needs no voluntary effort from the patient.",
-    steps:[
-      "Position the patient relaxed on the plinth with the joint supported at a fixed angle.",
-      "Find and mark the thickest point of the muscle belly.",
-      "Place the sensor perpendicular to the mark with its initial pressure, using the tripod.",
-      "Stick the two electrodes either side, with the sensor midway between them.",
-      "Select the muscle in the software; start low and raise the current stepwise with short rests until Dm stops increasing.",
-      "Save the best curve and repeat on the other side in the identical position."
-    ],
-    points:[
-      "Sensor position changes the result — record it.",
-      "Dm is read as an indicator of muscle tone or stiffness; Tc relates to contraction speed.",
-      "Electrodes are single-patient use.",
-      "Electrical-stimulation precautions apply."
-    ],
-    mistakes:[
-      "Measuring a muscle that is not fully relaxed.",
-      "Comparing sides with different sensor positions or joint angles.",
-      "Stopping the intensity ramp before maximal displacement is reached."
-    ],
-    evidence:"Reported reliability is high (ICC 0.92–0.97), but sensor location and stimulation intensity significantly affect the parameters, and much of the literature comes from sport populations with small samples.",
-    sources:[
-      ["Tensiomyography method for neuromuscular assessment (PMC3713716)","https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3713716/"],
-      ["Sensor location affects TMG parameters (PMC9910630)","https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9910630/"],
-      ["TMG — Getting to know tensiomyography (manufacturer, with measurement video)","https://www.tmg-bodyevolution.com/?p=2307"]
     ]
   }
 ];
